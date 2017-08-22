@@ -11,4 +11,8 @@ class DemoController < ApplicationController
   	render('hello')
   end
 
+  def other_hello
+  	redirect_to(:controller => 'demo', :action => 'index') # controller not required, since we are already in demo controller.
+  end
+
 end
