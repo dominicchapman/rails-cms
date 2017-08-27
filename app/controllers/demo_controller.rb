@@ -9,6 +9,8 @@ class DemoController < ApplicationController
   # define action for hello template
   def hello
   	@array = [1,2,3,4,5]
+  	@id = params['id']
+  	@page = params[:page]
   	render('hello')
   end
 
